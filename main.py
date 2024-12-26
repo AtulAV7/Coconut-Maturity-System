@@ -27,7 +27,7 @@ settings.configure(
 )
 
 # Load YOLO Model
-MODEL_PATH = '/Users/atulalexander/Library/Mobile Documents/com~apple~CloudDocs/Desktop/agrithontest/best.pt'
+MODEL_PATH = '/Users/atulalexander/Desktop/agrithontest/best.pt'
 model = YOLO(MODEL_PATH)
 
 @csrf_exempt
