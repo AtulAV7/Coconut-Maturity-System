@@ -1,12 +1,12 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ['src/main.jsx'], // Add other problematic files here
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
     },
-  },
-});
-
+  }
+})
